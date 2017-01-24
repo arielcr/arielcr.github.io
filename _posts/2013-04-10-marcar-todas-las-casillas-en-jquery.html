@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: Marcar todas las casillas en jQuery
+author:
+  display_name: Ariel Orozco
+  login: ariel
+  email: bassplayer85@gmail.com
+  url: ''
+author_login: ariel
+author_email: bassplayer85@gmail.com
+wordpress_id: 125
+wordpress_url: http://arielorozco.com/?p=125
+date: '2013-04-10 13:08:57 -0600'
+date_gmt: '2013-04-10 19:08:57 -0600'
+categories:
+- javascript
+- jquery
+tags: []
+comments: []
+---
+<p>Si necesitan marcar todas casillas de verificaci&oacute;n en un formulario, pueden utilizar este sencillo script para lograrlo.</p>
+<p>[js]<br />
+$("#boton").click(function(){<br />
+    $("#formulario").find("input[type=checkbox]").each(function(){<br />
+        $(this).attr("checked", "checked");<br />
+     });<br />
+});<br />
+[&#47;js]</p>
+<p><span style="font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; font-size: 13px; line-height: 19px;">Solamente indican el ID del bot&oacute;n o link al que desean agregarle la acci&oacute;n y el ID del formulario (o un div que contenga las casillas).<&#47;span></p>

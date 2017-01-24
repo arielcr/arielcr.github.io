@@ -1,0 +1,113 @@
+---
+layout: post
+status: publish
+published: true
+title: 'Ruby On Rails : Scaffold'
+author:
+  display_name: Ariel Orozco
+  login: ariel
+  email: bassplayer85@gmail.com
+  url: ''
+author_login: ariel
+author_email: bassplayer85@gmail.com
+wordpress_id: 17
+wordpress_url: http://arielorozco.com/?p=17
+date: '2008-08-05 02:16:00 -0600'
+date_gmt: '2008-08-05 02:16:00 -0600'
+categories:
+- tutoriales
+- programacion
+- Ruby-On-Rails
+tags: []
+comments:
+- id: 15
+  author: Nico Badano
+  author_email: ''
+  author_url: ''
+  date: '2009-02-03 15:12:00 -0600'
+  date_gmt: '2009-02-03 15:12:00 -0600'
+  content: Una pregunta:<br&#47;>en el scaffolding de ROR 2.x hay que definir los
+    campos del modelo a diferencia que en ROR 1.X donde los campos eran inferidos
+    de la base de datos. Es posible hacer esto mismo en las nuevas versiones de ROR?
+- id: 16
+  author: Ariel Orozco R.
+  author_email: ''
+  author_url: ''
+  date: '2009-02-03 22:40:00 -0600'
+  date_gmt: '2009-02-03 22:40:00 -0600'
+  content: Tengo entendido que esto cambio en las versiones 2.X de RoR, y a diferencia
+    de las versiones anteriores los campos del modelo no se pueden inferir de la base
+    de datos, sino que hay que especificarlos (hubiera preferido que lo dejaran igual).
+    Talvez haya alguna manera alternativa de hacerlo, si la descubres puedes postearla
+    aca! Gracias por tu comentario!
+- id: 21
+  author: Adaias
+  author_email: ''
+  author_url: ''
+  date: '2009-10-04 04:45:58 -0600'
+  date_gmt: '2009-10-04 04:45:58 -0600'
+  content: Aun no encuentran una manera alternativa de que el scaffold tome los campos
+    de la tabla?.  digo me parece que era una mejor opcion, pensando en que la tabla
+    puede existir antes de la aplicacion, seguire esperando
+- id: 32
+  author: jonathan
+  author_email: arroyoj1@hotmail.com
+  author_url: http://blog.aldebaran.mx
+  date: '2011-03-09 18:34:55 -0600'
+  date_gmt: '2011-03-09 18:34:55 -0600'
+  content: "pregunta \r\n\r\nque valores puedo establecer en el scaffold ??\r\n\r\nstring
+    \r\ntext \r\n\r\npero cual otro \r\n\r\ndigo esos dos los conosco por que son
+    los que vienen en el ejemplo de la portada"
+- id: 41
+  author: Juan
+  author_email: jgutierrez@ecarrier.cl
+  author_url: ''
+  date: '2012-01-30 21:28:33 -0600'
+  date_gmt: '2012-01-30 21:28:33 -0600'
+  content: "Hola bueno yo me he topado con el mismo \"problema\". Intento generar
+    el scaffold, pero s&oacute;lo crea el CRUD con los campo que especifico directamente
+    v&iacute;a linea de comando.\r\n\r\n&iquest;Alguien tiene alguna pista de c&oacute;mo
+    generar el CRUD a partir de la BBDD?\r\n\r\nEs muy incomodo cuando estas de Noob..."
+---
+<p align="justify"><a href="http:&#47;&#47;www.rubyonrails.org&#47;">Ruby On Rails<&#47;a> es un excelente punto de partida para entender el patron de dise&ntilde;o <a href="http:&#47;&#47;es.wikipedia.org&#47;wiki&#47;Modelo_Vista_Controlador">MVC<&#47;a> en web, y el framework cuenta con muchas herramientas que facilitan tu trabajo, te ahorran tiempo y te ayudan a desarrollar aplicaciones web muy r&aacute;pidamente. Un ejemplo de esto es la funcionalidad de <a href="http:&#47;&#47;www.carlosleopoldo.com&#47;post&#47;que-es-el-scaffolding-o-scaffold&#47;">scaffold<&#47;a> incluida en Rails, que con solo unos cuantos comandos puedes generar tu modelo, vista, controlador y hasta crear la tabla en la base de datos. Adem&aacute;s, siguiendo la teor&iacute;a de <a href="http:&#47;&#47;es.wikipedia.org&#47;wiki&#47;CRUD">CRUD<&#47;a>, el comando de scaffold genera adem&aacute;s toda la gesti&oacute;n para crear, eliminar, editar y mostrar los datos del modelo en que se esta trabajando, por lo que ya tienes las funciones b&aacute;sicas de un mantenimiento a una tabla, esto es muy &uacute;til y te ahorra mucho tiempo.<&#47;p></p>
+<p align="justify">Explicare como hacer esto en unos simples pasos, si todav&iacute;a no has <a href="http:&#47;&#47;geekbass.blogspot.com&#47;2008&#47;04&#47;ahi-voy-ruby-on-rails.html">instalado Ruby On Rails<&#47;a> en tu m&aacute;quina local, te recomiendo que sigas las <a href="http:&#47;&#47;www.rubyonrails.org&#47;down">instrucciones<&#47;a> que vienen en el sitio oficial. Tambi&eacute;n puedes seguir los <a href="http:&#47;&#47;www.onlamp.com&#47;pub&#47;a&#47;onlamp&#47;2006&#47;12&#47;14&#47;revisiting-ruby-on-rails-revisited.html">tutoriales b&aacute;sicos<&#47;a> que tienen, para que tengas una idea mas general de como funciona Ruby.<&#47;p></p>
+<p align="justify">A partir del lanzamiento de <a href="http:&#47;&#47;weblog.rubyonrails.org&#47;2007&#47;12&#47;7&#47;rails-2-0-it-s-done">Rails 2.0<&#47;a> ha cambiado un poco la manera en que se realiza el scaffold, por lo que si has seguido anteriormente tutoriales que utilizan versiones anteriores a esta, te veras un poco confundido, por lo que aqu&iacute; explico como hacerlo correctamente en 4 sencillos pasos:<&#47;p></p>
+<ol>
+<li>
+<div align="justify">
+<p>Generar la aplicaci&oacute;n:</p>
+<p>[code]$ rails aplicacion[&#47;code]</p>
+<p><&#47;div><&#47;li></p>
+<li>Usando tu&nbsp;<a href="http:&#47;&#47;www.e-texteditor.com&#47;">editor de texto<&#47;a>, abre el archivo database.yml ubicado en \mi_aplicacion\config y configurarlo con tus credenciales de la base de datos. En mi caso estoy usando&nbsp;<a href="http:&#47;&#47;www.blogger.com&#47;www.mysql.com">MySQL<&#47;a>, ten en cuenta que por razones de convenci&oacute;n, RoR necesita crear 3 bases de datos. Es importante que el nombre de cada una sea el mismo seguido de production, development o test:
+<p>[code]<br />
+development:<br />
+  adapter: sqlite3<br />
+  database: db&#47;development.sqlite3<br />
+  pool: 5<br />
+  timeout: 5000</p>
+<p>test:<br />
+  adapter: sqlite3<br />
+  database: db&#47;test.sqlite3<br />
+  pool: 5<br />
+  timeout: 5000</p>
+<p>production:<br />
+  adapter: mysql<br />
+  encoding: utf8<br />
+  database: your_db<br />
+  username: root<br />
+  password: your_pass<br />
+  socket: &#47;tmp&#47;mysql.sock<&#47;code><br />
+[&#47;code]</p>
+<p><&#47;li></p>
+<li>Crear las bases de datos<&#47;li>
+<li>Generar la estructura con scaffold. Noten que despu&eacute;s de scaffold sigue el nombre del modelo (tabla) seguido de las columnas y el tipo de dato:
+<p>[code]$&nbsp;generate scaffold User[&#47;code]</p>
+<p><&#47;li></p>
+<li>Crear las tablas en la base de datos:<&#47;li><br />
+<&#47;ol><br />
+Listo! Ah&iacute; tienes una aplicacion lista para ser ejecutada, obviamente es un poco sencilla, pero muestra b&aacute;sicamente lo que puedes lograr utilizando esta herramienta y toda el tiempo que te ahorras tambi&eacute;n.</p>
+<p>Si quieres ver tu aplicacion en acci&oacute;n solamente corres tu servidor web que tienes configurado para RoR, en mi caso estoy utilizando el WEBrick, que ya viene incluido en el framework. Puedes arrancarlo de la siguiente manera</p>
+<p>[code]<br />
+$ rails server<br />
+[&#47;code]</p>
+<p>Luego te vas a tu explorador preferido y escribes la ruta hacia tu aplicacion, en el caso de nuestro ejemplo es: <a title="http:&#47;&#47;localhost:3000&#47;datos" href="http:&#47;&#47;localhost:3000&#47;datos">http:&#47;&#47;localhost:3000&#47;datos<&#47;a>. Y a partir de ah&iacute; todo se explica por si mismo, te sorprender&aacute; ver todo lo que hiciste en tan solo unas cuantas l&iacute;neas de c&oacute;digo. Es importante que despu&eacute;s (como todo geek) te pongas a examinar un poco el c&oacute;digo para ver que hay detr&aacute;s de todo esto y como funciona.</p>

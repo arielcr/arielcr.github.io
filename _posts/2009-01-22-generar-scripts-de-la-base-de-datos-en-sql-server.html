@@ -1,0 +1,75 @@
+---
+layout: post
+status: publish
+published: true
+title: Generar Scripts de la Base de Datos en SQL Server
+author:
+  display_name: Ariel Orozco
+  login: ariel
+  email: bassplayer85@gmail.com
+  url: ''
+author_login: ariel
+author_email: bassplayer85@gmail.com
+wordpress_id: 22
+wordpress_url: http://arielorozco.com/?p=22
+date: '2009-01-22 04:13:00 -0600'
+date_gmt: '2009-01-22 04:13:00 -0600'
+categories:
+- tutoriales
+- programacion
+- sql server
+tags: []
+comments:
+- id: 17
+  author: carolina
+  author_email: ''
+  author_url: ''
+  date: '2009-03-13 14:06:00 -0600'
+  date_gmt: '2009-03-13 14:06:00 -0600'
+  content: Gracias por la info !! pero ... lo prob&eacute; y no funciona de 10. Tengo
+    una base con muchos datos y el archivo que genera es muy grande y cuando lo quiero
+    ejecutar me da un System.OutOfMemoryException (mscorlib). Lo que ser&iacute;a
+    bueno es que al llegar a una cierta cantidad de datos parta el archivo en dos
+    o tres ... pero mil gracias por la info ... est&aacute; muy buena !!
+- id: 23
+  author: alejandro
+  author_email: ''
+  author_url: ''
+  date: '2009-12-14 19:15:21 -0600'
+  date_gmt: '2009-12-14 19:15:21 -0600'
+  content: muchas gracias amigo<br &#47;>me salvaste un reto <br &#47;>xd<br &#47;>
+    <br &#47;>Saludos desde chile
+- id: 24
+  author: Juan Francisco Ajcip X
+  author_email: ''
+  author_url: ''
+  date: '2010-06-11 20:20:40 -0600'
+  date_gmt: '2010-06-11 20:20:40 -0600'
+  content: Gracias compa&ntilde;ero, por compartir conocimientos, excelente herramienta.
+    Saludos
+- id: 25
+  author: Ariel Orozco R.
+  author_email: ''
+  author_url: ''
+  date: '2010-06-11 20:56:38 -0600'
+  date_gmt: '2010-06-11 20:56:38 -0600'
+  content: que bien que les sirvio la herramienta!! saludos! ;)
+- id: 39
+  author: Mat&iacute;as
+  author_email: matiortega@gmail.com
+  author_url: ''
+  date: '2011-10-10 19:23:34 -0600'
+  date_gmt: '2011-10-10 19:23:34 -0600'
+  content: Buenas compa&ntilde;eros, tengo un problema, necesito automatizar el respaldo
+    de procedures y vistas (a scripts .sql)para que sea diario. Ahora, no he encontrado
+    la forma de hacerlo. Alguien tiene alguna forma???? Desde ya muchas gracias!
+---
+<p>&iquest; Alguna vez han necesitado generar un script de la base de datos en SQL Server ? No me refiero a solo el esquema, ya que esto se puede hacer f&aacute;cilmente en <a href="http:&#47;&#47;www.microsoft.com&#47;latam&#47;sql&#47;">SQL Server 2005<&#47;a>, sino tambi&eacute;n a los datos.</p>
+<div style="text-align: justify;">
+<p>Se que es posible crear un respaldo de la base de datos con toda esta informaci&oacute;n, que es una de las opciones mas utilizadas, pero todos sabemos que el backup solo puede ser le&iacute;do y restaurado en un servidor MS SQL, y realmente no podemos leer el contenido de este. Pero que tal si quisieramos tener tambi&eacute;n un respaldo del esquema y adem&aacute;s de todos los datos, procedimientos almacenados, funciones y todos los objetos de la base de datos, pero en formato <a href="http:&#47;&#47;www.w3schools.com&#47;sql&#47;default.asp">SQL<&#47;a>.Para el desarrollo de una aplicaci&oacute;n necesitaba solamente la estructura de algunas tablas, lo cual se solucionaba con el asistente que facilita SQL Server 2005, pero adem&aacute;s de esto tambi&eacute;n ocupaba todos los datos de estas tablas. Me extra&ntilde;o que el <a href="http:&#47;&#47;www.microsoft.com&#47;downloads&#47;details.aspx?familyid=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&amp;displaylang=es">Management Studio<&#47;a> no tuviera esta opci&oacute;n, ya que me parece algo sumamente necesario, que puede ser de gran ayuda para realizar migraciones o tener respaldos de ciertos scripts en la base datos. Adem&aacute;s, en otros gestores de base de datos como <a href="http:&#47;&#47;www.mysql.com&#47;">MySQL<&#47;a> realizar esto es una tarea muy b&aacute;sica y sencilla!</p>
+<p><&#47;div></p>
+<div style="text-align: justify;">
+<p>Pues mis sue&ntilde;os frustrados por encontrarle mas pulgas a los productos Microsoft no se hicieron realidad...!, ya que SQL Server si posee una herramienta para realizar esta tarea, solamente que no viene incluida en la Base de Datos, ya que es necesario descargarla por separado (como era de esperarse...)El <a href="http:&#47;&#47;www.microsoft.com&#47;downloads&#47;details.aspx?familyid=56E5B1C5-BF17-42E0-A410-371A838E570A&amp;displaylang=en">SQL Server Database Publishing Wizard<&#47;a> nos permite generar scripts completos de todos los objetos de la base de datos y copiarlos o guardarlos en archivos.</p>
+<p><&#47;div></p>
+<div style="text-align: justify;">Por medio de un asistente podemos elegir si deseamos generar los scripts solamente del esquema, datos, procedimientos almacenados, funciones, etc. El asistente es muy intuitivo y f&aacute;cil de utilizar, adem&aacute;s se integra f&aacute;cilmente con el Management Studio, Visual Studio 2005 o Visual Web Developer 2005.<&#47;div></p>
+<div style="text-align: justify;">Funciona perfectamente en SQL Server 2000&#47;2005&#47;2008. Pueden descargarlo en la <a href="http:&#47;&#47;www.microsoft.com&#47;downloads&#47;details.aspx?familyid=56E5B1C5-BF17-42E0-A410-371A838E570A&amp;displaylang=en">pagina oficial<&#47;a>, y lo mejor es que es gratuito! (aunque no lo crean,...). En definitiva es una herramienta necesaria y recomendada para cualquier desarrollador o administrador de base de datos.<&#47;div></p>

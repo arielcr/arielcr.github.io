@@ -1,0 +1,337 @@
+---
+layout: post
+status: publish
+published: true
+title: Obtener tipo de cambio actual (Colones-Dolares) en PHP
+author:
+  display_name: Ariel Orozco
+  login: ariel
+  email: bassplayer85@gmail.com
+  url: ''
+author_login: ariel
+author_email: bassplayer85@gmail.com
+wordpress_id: 34
+wordpress_url: http://arielorozco.com/?p=34
+date: '2010-12-29 21:40:32 -0600'
+date_gmt: '2010-12-29 21:40:32 -0600'
+categories:
+- tutoriales
+- programacion
+- php
+tags: []
+comments:
+- id: 33
+  author: Edward
+  author_email: edw_018@hotmail.com
+  author_url: ''
+  date: '2011-07-19 18:30:00 -0600'
+  date_gmt: '2011-07-19 18:30:00 -0600'
+  content: cual seria la diferencia entre el valor q me entreguen si uso SOAP o no
+    ???
+- id: 34
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2011-07-19 19:12:19 -0600'
+  date_gmt: '2011-07-19 19:12:19 -0600'
+  content: El valor devuelto es el mismo. La diferencia radica mas que todo en los
+    permisos que tenga el servidor donde estas ejecutando la aplicacion, ya que algunos
+    restriguen la funcion file_get_contents. Si este es tu caso, puedes usar el metodo
+    con SOAP. De igual manera cualquiera de los 2 funcionan por igual.
+- id: 35
+  author: Omegakenshin
+  author_email: omegakenshin@gmail.com
+  author_url: ''
+  date: '2011-09-16 18:07:53 -0600'
+  date_gmt: '2011-09-16 18:07:53 -0600'
+  content: El script me dice k esta deprecated... podrias comprobar si puedes hacerle
+    un upgrade... realmente seria excelente!
+- id: 36
+  author: Luis
+  author_email: l_daguilar@hotmail.com
+  author_url: ''
+  date: '2011-09-19 20:39:23 -0600'
+  date_gmt: '2011-09-19 20:39:23 -0600'
+  content: "Buenas tardes,\r\n\r\nNo sabes si es posible obtener este dato del BNCR?"
+- id: 37
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2011-09-20 14:28:55 -0600'
+  date_gmt: '2011-09-20 14:28:55 -0600'
+  content: Hola, a lo que yo tengo entendido no es posible hacer esto con el BNCR,
+    ya que no cuentan con un webservice como el BCCR para tal uso. Una opci&oacute;n
+    es obtener los datos leyendolos directamente de la p&aacute;gina del BNCR con
+    file_get_contents, y asi pod&eacute;s obtener los datos que necesites. Esto si
+    lleva un poco m&aacute;s trabajo, pero si es posible. Cualquier duda al respecto
+    me pregunt&aacute;s.
+- id: 38
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2011-09-20 14:29:44 -0600'
+  date_gmt: '2011-09-20 14:29:44 -0600'
+  content: Que extra&ntilde;o... los datos los estas obteniendo con SOAP o con file_get_contents
+    ?
+- id: 40
+  author: Alex
+  author_email: alexcalderont@hotmail.com
+  author_url: ''
+  date: '2011-12-15 22:51:59 -0600'
+  date_gmt: '2011-12-15 22:51:59 -0600'
+  content: "Mi amigo no me est&aacute; funcionando  me da todo esto:\r\n\r\nNotice:
+    Use of undefined constant COMPRA - assumed 'COMPRA' in C:\\xampp\\htdocs\\Margen\\ejemplo.php
+    on line 4\r\n\r\nDeprecated: Assigning the return value of new by reference is
+    deprecated in C:\\xampp\\htdocs\\Margen\\soap\\nusoap.php on line 7381\r\n\r\nStrict
+    Standards: Creating default object from empty value in C:\\xampp\\htdocs\\Margen\\soap\\nusoap.php
+    on line 75\r\n\r\nDeprecated: Function ereg() is deprecated in C:\\xampp\\htdocs\\Margen\\soap\\nusoap.php
+    on line 2176\r\n\r\nDeprecated: Function set_magic_quotes_runtime() is deprecated
+    in C:\\xampp\\htdocs\\Margen\\soap\\nusoap.php on line 2667\r\n\r\nNotice: Trying
+    to get property of non-object in C:\\xampp\\htdocs\\Margen\\Indicador.php on line
+    68\r\n\r\nNotice: Trying to get property of non-object in C:\\xampp\\htdocs\\Margen\\Indicador.php
+    on line 68"
+- id: 42
+  author: Aaron Castillo
+  author_email: aaroncastillo04@gmail.com
+  author_url: http://www.gallerywebs.com
+  date: '2012-09-20 20:27:54 -0600'
+  date_gmt: '2012-09-20 20:27:54 -0600'
+  content: "Excelente aporte!!! Gracias, es justo lo que andaba buscando!\r\nYa lo
+    corr&iacute; y funciona perfecto. El metodo que estaba utilizando para obtener
+    el cambio de moneda era realmente complicado y al final hasta me dej&oacute; de
+    funcionar, pero esto es realmente una maravilla.\r\nGracias de nuevo!!!"
+- id: 43
+  author: Aaron
+  author_email: aaroncastillo04@gmail.com
+  author_url: http://www.gallerywebs.com
+  date: '2012-09-20 22:33:53 -0600'
+  date_gmt: '2012-09-20 22:33:53 -0600'
+  content: y existe la posibilidad de hacer cambios de otras divisas con este mismo
+    script? o solo sirve para averiguar el tipo de cambio del dolar?
+- id: 47
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2012-09-21 13:58:01 -0600'
+  date_gmt: '2012-09-21 13:58:01 -0600'
+  content: Que bueno que te fue de utilidad!!
+- id: 48
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2012-09-21 14:04:50 -0600'
+  date_gmt: '2012-09-21 14:04:50 -0600'
+  content: Claro, solamente necesitas modificar las constantes de tipo de cambios
+    por el codigo que desees. En est&aacute; p&aacute;gina se encuentran todos los
+    c&oacute;digos disponibles http:&#47;&#47;www.bccr.fi.cr&#47;indicadores_economicos_&#47;ServicioWeb.html
+- id: 49
+  author: Diego
+  author_email: diego.cartin@impresionantescr.com
+  author_url: ''
+  date: '2012-11-09 12:59:11 -0600'
+  date_gmt: '2012-11-09 18:59:11 -0600'
+  content: Muy buen codigo, felicidades!
+- id: 50
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2012-11-09 14:21:58 -0600'
+  date_gmt: '2012-11-09 20:21:58 -0600'
+  content: Que bien que te fue de utilidad!
+- id: 60
+  author: ADOFLO
+  author_email: fitorojas@gmail.com
+  author_url: ''
+  date: '2013-03-05 11:31:58 -0600'
+  date_gmt: '2013-03-05 17:31:58 -0600'
+  content: "Hola Ariel.\r\nMuchas gracias por compartir tus conocimientos.\r\n\r\nCuando
+    ejecuto la clase, me devuelve un valor, ejemplo: 494.72000000\r\nComo puedo hacer
+    para que me aparezca ese valor solamente con 2 o 4 decimales, ejem: 494.7200\r\n\r\nSaludos,\r\n\r\nAdolfo"
+- id: 61
+  author: ADOFLO
+  author_email: fitorojas@gmail.com
+  author_url: ''
+  date: '2013-03-05 11:38:55 -0600'
+  date_gmt: '2013-03-05 17:38:55 -0600'
+  content: "ya lo pude hacer!\r\necho \" \" . $english_format_number2 = number_format($valor,
+    4);"
+- id: 62
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2013-03-05 11:48:21 -0600'
+  date_gmt: '2013-03-05 17:48:21 -0600'
+  content: |-
+    Hola!
+
+    Que bien que te funcion&oacute;! Como lo hiciste est&aacute; bien!
+- id: 76
+  author: Diego
+  author_email: diecartin@hotmail.com
+  author_url: ''
+  date: '2013-10-14 22:03:57 -0600'
+  date_gmt: '2013-10-15 04:03:57 -0600'
+  content: Excelente aporte, muy bien escrito el codigo, muy limpia y facil su utilizacion!!
+    Gracias!
+- id: 77
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2013-10-15 10:02:50 -0600'
+  date_gmt: '2013-10-15 16:02:50 -0600'
+  content: Que bien que te fue de utilidad! Gracias por tu comentario!
+- id: 87
+  author: Leonardo
+  author_email: lbaldelomar@siquirresgrafico.com
+  author_url: ''
+  date: '2014-04-30 08:55:10 -0600'
+  date_gmt: '2014-04-30 14:55:10 -0600'
+  content: "Saludos.\r\nDeseo agregar esta herramienta en una web, pero sinceramente
+    no conozco mucho del tema.\r\n\r\nPodr&iacute;as explicarme un poco como hacerlo
+    con PHP. Ya descargu&eacute; lo archivos. En que orden y donde debo colocarlos?\r\n\r\nDe
+    antemano Gracias!!!"
+- id: 88
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2014-04-30 09:45:54 -0600'
+  date_gmt: '2014-04-30 15:45:54 -0600'
+  content: "Hola! \r\n\r\nHace poco agregu&eacute; esta herramienta en <a href=\"http:&#47;&#47;packagist.org\"
+    target=\"_blank\" rel=\"nofollow\">packagist<&#47;a>, por lo que ya es posible
+    instalarla m&aacute;s facilmente por medio de <a href=\"https:&#47;&#47;getcomposer.org&#47;\"
+    target=\"_blank\" rel=\"nofollow\">composer<&#47;a>. El proyecto est&aacute; en
+    github: <a href=\"https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr\"
+    target=\"_blank\" rel=\"nofollow\">https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr<&#47;a>,
+    ah&iacute; vas a encontrar las instrucciones de como utilizarlo.\r\n\r\nSaludos
+    y gracias!"
+- id: 90
+  author: Ricardo
+  author_email: rickyespinozal@hotmail.com
+  author_url: http://ninguna
+  date: '2014-05-02 10:24:15 -0600'
+  date_gmt: '2014-05-02 16:24:15 -0600'
+  content: "Viejo me sale esto cuando lo pongo a correr.\r\n\r\nNotice: Use of undefined
+    constant COMPRA - assumed 'COMPRA' in D:\\Xampp\\htdocs\\tipocambio\\ejemplo.php
+    on line 4\r\n\r\nWarning: Creating default object from empty value in D:\\Xampp\\htdocs\\tipocambio\\soap\\nusoap.php
+    on line 75\r\n\r\nCual ser&aacute; el problema?"
+- id: 91
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2014-05-02 15:46:48 -0600'
+  date_gmt: '2014-05-02 21:46:48 -0600'
+  content: "Hola!\r\n\r\nEstas usando esta versi&oacute;n <a href=\"https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr\"
+    title=\"https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr\" target=\"_blank\"
+    rel=\"nofollow\">https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr<&#47;a>
+    ?\r\n\r\nEs la m&aacute;s actualizada y podes instalarla con composer. "
+- id: 97
+  author: Joe
+  author_email: jamarchi@yahoo.com
+  author_url: ''
+  date: '2014-06-23 16:06:35 -0600'
+  date_gmt: '2014-06-23 22:06:35 -0600'
+  content: "Hola, acabo de llegar a tu p&aacute;gina, y queria consultarte si has
+    actualizado este c&oacute;digo, \r\n\r\nGracias por la ayuda"
+- id: 98
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2014-06-25 08:47:45 -0600'
+  date_gmt: '2014-06-25 14:47:45 -0600'
+  content: Claro! El codigo esta actualizado, lo puedes encontrar en <a href="https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr"
+    title="https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr" target="_blank"
+    rel="nofollow">https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr<&#47;a>
+- id: 527
+  author: osmi
+  author_email: omi-garv@hotmail.com
+  author_url: http://www.qdigital.mx
+  date: '2016-06-22 10:27:19 -0600'
+  date_gmt: '2016-06-22 16:27:19 -0600'
+  content: hola amigo esta muy bueno al aporte pero queria saber donde colocar el
+    archivo... yo estoy programando en magento me puedes ayudar como integrarlo a
+    magento xfa necesito q me ayudes, he buscado en todas partes tu aporte lo veo
+    mejor.. pero tengo esas dudas
+- id: 528
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2016-06-22 12:39:15 -0600'
+  date_gmt: '2016-06-22 18:39:15 -0600'
+  content: "Hola, \n\nLa ubicaci&oacute;n del archivo no es importante, colocalo donde
+    desees y simplemente lo incluyes en tu codigo con:\n\n<code>require_once(\"Indicador.php\");<&#47;code>\n\nTienes
+    que remplazar el nombre del archivo con la ruta en donde se encuentra, por ejemplo:\n\n<code>require_once(\"&#47;lib&#47;utils&#47;Indicador.php\");<&#47;code>\n\nDependiendo
+    de donde invoques la funci&oacute;n va a variar la ubicacion que coloques, por
+    ejemplo, si Indicador.php se encuentra en la misma carpeta donde esta el archivo
+    que lo utiliza, entonces probablemente no tiene que incluirle la ruta.\n\nSaludos!"
+- id: 532
+  author: osmi
+  author_email: omi-garv@hotmail.com
+  author_url: http://www.qdigital.mx
+  date: '2016-07-06 08:20:04 -0600'
+  date_gmt: '2016-07-06 14:20:04 -0600'
+  content: "Buenos dias amigo como, quiero que me ayudes como aria el cambio del dolar
+    a pesos desde el emulador magento.\r\npara mi tienda, te lo agradezco ante mano."
+- id: 533
+  author: Bryan Vega Rondon
+  author_email: vegabryan@gmail.com
+  author_url: http://www.comred.co.cr
+  date: '2016-07-08 03:16:30 -0600'
+  date_gmt: '2016-07-08 09:16:30 -0600'
+  content: hola, funciona PERFECTO, pero me gustar&iacute;a saber si hay alguna manera
+    de adaptarlo para que funcione con javascript, necesito insertarlo en una pagina
+    HTML5 y la verdad he tratado de todo pero no me da la cabeza.
+- id: 534
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2016-07-11 12:41:38 -0600'
+  date_gmt: '2016-07-11 18:41:38 -0600'
+  content: |-
+    &iexcl;Hola!
+
+    En ese caso lo que tendr&iacute;as que hacer es crear un script en php el cual utilice esta librer&iacute;a y te devuelva los datos que necesitas. Luego en Javascript haces un Request al mismo por medio de Ajax. Como ejemplo usando jQuery ser&iacute;a algo as&iacute;
+- id: 598
+  author: Jonathan Retana
+  author_email: jretanaf89@gmail.com
+  author_url: http://www.bienesraicescoopeagri.cr
+  date: '2017-01-11 15:17:33 -0600'
+  date_gmt: '2017-01-11 21:17:33 -0600'
+  content: "Hola Amigo, habia encontrado tu aporte hace un tiempo, lo aplique a mi
+    sitio y funciono muy bien durante almenos 2 a&ntilde;os, hace unos d&iacute;as
+    note que no aparece el tipo de cambio.\r\n\r\nSer&aacute; que algo cambio?, solo
+    a mi me dejo de funcionar? \r\n\r\nNo he hecho cambios que puedan afectar el codigo."
+- id: 599
+  author: Ariel Orozco
+  author_email: bassplayer85@gmail.com
+  author_url: ''
+  date: '2017-01-11 15:53:39 -0600'
+  date_gmt: '2017-01-11 21:53:39 -0600'
+  content: |-
+    &iexcl;Hola!
+
+    Yo lo tengo instalado en un sitio y si me est&aacute; funcionando. Podr&iacute;as probar de nuevo, aveces el web service del banco central deja de funcionar por instantes.
+
+    &iexcl;Saludos!
+---
+<p><span style="color: #0000ff;"><strong>[ACTUALIZACI&Oacute;N]<&#47;strong><&#47;span>:&nbsp;Hace poco agregu&eacute; esta herramienta en <a href="https:&#47;&#47;packagist.org&#47;packages&#47;arielcr&#47;tipocambio-bccr" target="_blank">packagist<&#47;a>, por lo que ya es posible instalarla m&aacute;s facilmente por medio de <a href="https:&#47;&#47;getcomposer.org&#47;" target="_blank">composer<&#47;a>. El proyecto est&aacute; en github: <a href="https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr" target="_blank">https:&#47;&#47;github.com&#47;arielcr&#47;tipocambio-bccr<&#47;a>, ah&iacute; van a encontrar las instrucciones de como utilizarlo.</p>
+<hr &#47;>
+<p><span style="line-height: 1.5em;"><br />
+En muchos sitios web, como en los carritos de compra, es necesario obtener el tipo de cambio asociado a una moneda, ya sea para calcular el precio o para fines informativos. Muchos <&#47;span><a style="line-height: 1.5em;" href="http:&#47;&#47;www.opencart.com&#47;" target="_blank">sistemas<&#47;a><span style="line-height: 1.5em;"> ya incluyen esta funcionalidad, y lo m&aacute;s usual es que sea el mismo administrador el que tenga que estar actualizando este dato.<&#47;span></p>
+<p>Lo m&aacute;s optimo es obtener este valor de alguna fuente confiable, ya que se desea que este dato est&eacute; actualizado. Por lo general la&nbsp;mayor&iacute;a&nbsp;de los Bancos ponen a disposici&oacute;n&nbsp;alg&uacute;n&nbsp;tipo de servicio web por el cual se pueden obtener estos valores.</p>
+<p>En mi pa&iacute;s (Costa Rica) el Banco Central dispone de un <a href="http:&#47;&#47;es.wikipedia.org&#47;wiki&#47;Servicio_web" target="_blank">WebService<&#47;a> que se puede utilizar para obtener el tipo de cambio actual. Hay varios&nbsp;m&eacute;todos&nbsp;para obtener estos datos, dependiendo del lenguaje en que se este desarrollando, en esta&nbsp;ocasi&oacute;n&nbsp;les voy a explicar como hacerlo en <a href="http:&#47;&#47;es.wikipedia.org&#47;wiki&#47;PHP" target="_blank">PHP<&#47;a>, y para facilitarles el trabajo pongo a su disposici&oacute;n <a href="https:&#47;&#47;github.com&#47;arielcr&#47;indicadores-bccr&#47;downloads" target="_blank">una clase en php<&#47;a> donde solamente indican el valor que desean (compra o venta) y esta se los retorna. Esta clase funciona&nbsp;espec&iacute;ficamente&nbsp;para consumir el WebService del Banco Central de Costa Rica, pero es completamente adaptable para utilizar cualquier otro servicio, ya que los&nbsp;m&eacute;todos&nbsp;que utiliza son los que generalmente se usan para obtener datos por este medio.</p>
+<p>Para utilizar la herramienta esto es lo que tienen que hacer:</p>
+<ol>
+<li>Descargar los <a href="https:&#47;&#47;github.com&#47;arielcr&#47;indicadores-bccr&#47;downloads" target="_blank">archivos necesarios<&#47;a> (estos incluyen la clase y la&nbsp;librer&iacute;a&nbsp;<a href="http:&#47;&#47;sourceforge.net&#47;projects&#47;nusoap&#47;" target="_blank">nusoap<&#47;a> si se desean obtener los datos con <a href="http:&#47;&#47;es.wikipedia.org&#47;wiki&#47;Simple_Object_Access_Protocol" target="_blank">SOAP<&#47;a>)<&#47;li>
+<li>Incluir la clase en el archivo que deseas utilizarla<&#47;li>
+<li>Obtener los datos de esta manera:
+<p>[php]<br />
+require_once("Indicador.php");<br />
+$i = new Indicador(true);<br />
+$valor = $i->obtenerIndicadorEconomico(Indicador::VENTA);<br />
+[&#47;php]</p>
+<p><&#47;li><br />
+<&#47;ol><br />
+El constructor de la clase <em>Indicador<&#47;em> recibe como&nbsp;par&aacute;metro&nbsp;un booleano que indica si los datos se van a obtener por medio del&nbsp;m&eacute;todo&nbsp;SOAP (si no lo indicas por defecto es falso). Esto depende mucho del servidor donde se encuentre tu sitio web, ya que algunos no permiten utilizar la&nbsp;funci&oacute;n&nbsp;de <a href="http:&#47;&#47;php.net&#47;manual&#47;en&#47;function.file-get-contents.php" target="_blank">file_get_contents<&#47;a> (usada con el&nbsp;m&eacute;todo&nbsp;GET)&nbsp; por razones de seguridad, en este caso es cuando necesitas obtener los datos con SOAP (es importante que siempre incluyas bajo el mismo directorio donde est&aacute; la clase <strong>Indicador.php<&#47;strong> la carpeta <strong>&#47;soap<&#47;strong> que contiene los archivos necesarios para utilizar este&nbsp;m&eacute;todo).</p>
+<p>La&nbsp;funci&oacute;n&nbsp;<em>obtenerIndicadorEconomico<&#47;em> recibe como&nbsp;par&aacute;metro&nbsp;el tipo de cambio que se desea, estos son valores constantes definidos en la misma clase, por lo que para indicar si deseas el valor de la Venta&nbsp;pasar&iacute;as&nbsp;por&nbsp;par&aacute;metro&nbsp;<span style="text-decoration: underline;">Indicador::VENTA<&#47;span> y para la compra <span style="text-decoration: underline;">Indicador::COMPRA<&#47;span>.</p>
+<p>Con esto ya obtienes el valor del tipo de cambio actualizado. Yo recomiendo programar&nbsp;alg&uacute;n&nbsp;tipo de cronjob o algo por el estilo para guardar este valor en base de datos, y no estar accesando al WebService cada vez que se ingresa al sitio web.</p>
+<p>Como siempre los<a href="https:&#47;&#47;github.com&#47;arielcr&#47;indicadores-bccr" target="_blank"> archivos y el c&oacute;digo<&#47;a> est&aacute;n siempre disponibles.</p>
