@@ -20,7 +20,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arielcr.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  arielcr
 permalink: /:categories/:title/
-excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
