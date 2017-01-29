@@ -31,3 +31,4 @@ exclude:
   - Gemfile.lock
 disqus:
     shortname: arielorozco
+google_analytics: UA-3469370-5
