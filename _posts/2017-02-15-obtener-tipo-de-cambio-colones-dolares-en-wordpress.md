@@ -24,6 +24,7 @@ Para instalar el plugin debe de hacer lo siguiente:
 1. Subir el archivo [wp-tipo-cambio-cr.zip][plugin] y descomprimirlo en el folder `/wp-content/plugins/` 
 2. Activar el plugin a travez del menu *Plugins* en WordPress
 
+<br />
 **En un template**
 
 Obtener tipo de cambio
@@ -47,7 +48,6 @@ Convertir un monto
 {% endhighlight %}
 
 <br />
-
 **En un post/page**
 
 Tipo de cambio de compra: `[WPTCR_TIPO_CAMBIO_COMPRA]`
@@ -59,7 +59,6 @@ Colones a Dolares: `[WPTCR_CONVERTIR_COLONES_DOLARES monto=20000]`
 Dolares a Colones: `[WPTCR_CONVERTIR_DOLARES_COLONES monto=200]`
 
 <br />
-
 Pronto les actualizare con el link al plugin en Wordpress para que si lo desean lo puedan instalar desde su sitio directamente.
 
 Saludos!
