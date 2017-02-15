@@ -46,6 +46,7 @@ Convertir un monto
 <?php wptcr_convertir_dolares_colones(100); ?>
 {% endhighlight %}
 
+<br>
 #### En un post/page
 
 Tipo de cambio de compra: `[WPTCR_TIPO_CAMBIO_COMPRA]`
@@ -56,6 +57,7 @@ Colones a Dolares: `[WPTCR_CONVERTIR_COLONES_DOLARES monto=20000]`
 
 Dolares a Colones: `[WPTCR_CONVERTIR_DOLARES_COLONES monto=200]`
 
+<br>
 Pronto les actualizare con el link al plugin en Wordpress para que si lo desean lo puedan instalar desde su sitio directamente.
 
 Saludos!
