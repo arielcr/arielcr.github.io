@@ -7,6 +7,10 @@ published: true
 ---
 
 ***
+**[ACTUALIZACIÓN #2]**: Si lo que buscas es como hacer esto en Wordpress entonces mejor mira [Como obtener el tipo de cambio (colones/dolares) en Wordpress](http://arielorozco.com/tutoriales/obtener-tipo-de-cambio-colones-dolares-en-wordpress/)
+<br />
+
+***
 **[ACTUALIZACIÓN #1]**: Hace poco agregué esta herramienta en [packagist][packagist], por lo que ya es posible instalarla más facilmente por medio de [composer][composer]. El proyecto está en github: [https://github.com/arielcr/tipocambio-bccr][paquete], ahí van a encontrar las instrucciones de como utilizarlo.
 <br />
 
