@@ -6,6 +6,10 @@ categories: tutoriales
 published: true
 ---
 
+***
+**[ACTUALIZACIÓN #1]**: Hace poco agregué esta herramienta en [packagist][packagist], por lo que ya es posible instalarla más facilmente por medio de [composer][composer]. El proyecto está en github: [https://github.com/arielcr/tipocambio-bccr][paquete], ahí van a encontrar las instrucciones de como utilizarlo.
+<br />
+
 En muchos sitios web, como en los carritos de compra, es necesario obtener el tipo de cambio asociado a una moneda, ya sea para calcular el precio o para fines informativos. Muchos [sistemas][sistemas] ya incluyen esta funcionalidad, y lo más usual es que sea el mismo administrador el que tenga que estar actualizando este dato.
 
 Lo más optimo es obtener este valor de alguna fuente confiable, ya que se desea que este dato esté actualizado. Por lo general la mayoría de los Bancos ponen a disposición algún tipo de servicio web por el cual se pueden obtener estos valores.
@@ -32,8 +36,6 @@ Con esto ya obtienes el valor del tipo de cambio actualizado. Yo recomiendo prog
 
 Como siempre los [archivos y el código][archivos] están siempre disponibles.
 
-***
-**[ACTUALIZACIÓN]**: Hace poco agregué esta herramienta en [packagist][packagist], por lo que ya es posible instalarla más facilmente por medio de [composer][composer]. El proyecto está en github: [https://github.com/arielcr/tipocambio-bccr][paquete], ahí van a encontrar las instrucciones de como utilizarlo.
 
 [packagist]: https://packagist.org/packages/arielcr/tipocambio-bccr
 [composer]: https://getcomposer.org/
