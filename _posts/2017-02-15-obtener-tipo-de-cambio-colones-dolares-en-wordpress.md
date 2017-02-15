@@ -26,7 +26,7 @@ Para instalar el plugin debe de hacer lo siguiente:
 
 #### En un template
 
-###### Obtener tipo de cambio
+##### Obtener tipo de cambio
 
 {% highlight php %}
 <?php wptcr_tipo_cambio('COMPRA'); ?>
@@ -36,7 +36,7 @@ Para instalar el plugin debe de hacer lo siguiente:
 <?php wptcr_tipo_cambio('VENTA'); ?>
 {% endhighlight %}
 
-###### Convertir un monto
+##### Convertir un monto
 
 {% highlight php %}
 <?php wptcr_convertir_colones_dolares(25000); ?>
