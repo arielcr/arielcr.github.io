@@ -4,6 +4,7 @@ title: Obtener tipo de cambio actual (Colones-Dolares) en PHP
 date: '2010-12-29 21:40:32 -0600'
 categories: tutoriales
 published: true
+excerpt: En mi país (Costa Rica) el Banco Central dispone de un WebService que se puede utilizar para obtener el tipo de cambio actual. Hay varios métodos para obtener estos datos, dependiendo del lenguaje en que se este desarrollando, en esta ocasión les voy a explicar como hacerlo en PHP
 ---
 
 ***
