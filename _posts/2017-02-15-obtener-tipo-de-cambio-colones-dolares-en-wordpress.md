@@ -30,21 +30,21 @@ Para instalar el plugin debe de hacer lo siguiente:
 Obtener tipo de cambio
 
 {% highlight php %}
-<?php wptcr_tipo_cambio('COMPRA'); ?>
+<?php echo wptcr_tipo_cambio('COMPRA'); ?>
 {% endhighlight %}
 
 {% highlight php %}
-<?php wptcr_tipo_cambio('VENTA'); ?>
+<?php echo wptcr_tipo_cambio('VENTA'); ?>
 {% endhighlight %}
 
 Convertir un monto
 
 {% highlight php %}
-<?php wptcr_convertir_colones_dolares(25000); ?>
+<?php echo wptcr_convertir_colones_dolares(25000); ?>
 {% endhighlight %}
 
 {% highlight php %}
-<?php wptcr_convertir_dolares_colones(100); ?>
+<?php echo wptcr_convertir_dolares_colones(100); ?>
 {% endhighlight %}
 
 <br />
