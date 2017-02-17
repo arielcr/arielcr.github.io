@@ -21,7 +21,7 @@ incluirlo en un post o en una página por medio de tags.
 
 Para instalar el plugin debe de hacer lo siguiente:
 
-1. Subir el archivo [wp-tipo-cambio-cr.zip][plugin] y descomprimirlo en el folder `/wp-content/plugins/` 
+1. Subir el archivo [wp-tipo-cambio-cr.zip][archivo] y descomprimirlo en el folder `/wp-content/plugins/`. Tambien pueden instalar el plugin directamente en su sitio en wordpress buscando *Tipo de Cambio Costa Rica* en el directorio de plugins.
 2. Activar el plugin a travez del menu *Plugins* en WordPress
 
 <br />
@@ -59,12 +59,13 @@ Colones a Dolares: `[WPTCR_CONVERTIR_COLONES_DOLARES monto=20000]`
 Dolares a Colones: `[WPTCR_CONVERTIR_DOLARES_COLONES monto=200]`
 
 <br />
-Pronto les actualizare con el link al plugin en Wordpress para que si lo desean lo puedan instalar desde su sitio directamente.
+Pueden ver el plugin en Wordpress [aqui][plugin].
 
 Saludos!
 
 [packagist]: https://packagist.org/packages/arielcr/tipocambio-bccr
 [composer]: https://getcomposer.org/
 [wordpress]: https://wordpress.org/
-[plugin]: https://sourceforge.net/projects/wp-tipo-cambio-cr/files/wp-tipo-cambio-cr.zip
+[plugin]: https://wordpress.org/plugins/tipo-de-cambio-costa-rica/
+[archivo]: https://downloads.wordpress.org/plugin/tipo-de-cambio-costa-rica.1.0.zip
 [tipocambio]: http://arielorozco.com/tutoriales/obtener-tipo-de-cambio-actual-colones-dolares-en-php/
